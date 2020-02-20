@@ -25,7 +25,7 @@ let InnerThemePart = (props) => {
   const textColor = !isLight ? 'text-light' : 'text-dark';
   return (
  
-      <div style={{'minHeight': '100vh', 'padding-bottom': '40px'}} className={`${bgColor} ${textColor}`}>
+      <div style={{'minHeight': '100vh', 'paddingBottom': '40px'}} className={`${bgColor} ${textColor}`}>
         <Navbar />
         <TransitionGroup>
           <CSSTransition 
