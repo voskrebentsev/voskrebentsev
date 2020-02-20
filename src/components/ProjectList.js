@@ -1,11 +1,10 @@
 import React, {useContext} from 'react';
 import {mockData} from '../data/data';
 import { ThemeContext } from '../contexts/ThemeContext';
-import { Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import './ProjectList.css';
 
 const ProjectList = () => {
-
   return (
     <div id="cards">
       {

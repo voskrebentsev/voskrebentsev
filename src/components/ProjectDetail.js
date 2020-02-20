@@ -3,7 +3,6 @@ import {mockData as data} from '../data/data';
 
 const ProjectDetail = (props) => {
   const post = data.find(post => props.match.params.id === post.id.toString());
-  console.log(post)
   return (
     <div className="container">
       <h2>{post.header}</h2>

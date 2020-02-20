@@ -1,5 +1,5 @@
 import React, {useContext, useEffect} from 'react';
-import {NavLink, Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import { ThemeContext } from '../contexts/ThemeContext';
 import './Navbar.css';
 

@@ -2,9 +2,12 @@ import React from 'react';
 import ava from  '../img/ava.jpg';
 import './AboutMe.css';
 
+
+
+
 const AboutMe = () => {
   return (
-    <div className={`container `}>
+    <div className={`container `} >
       <h1 className="display-4">About Me</h1>
       <div className='about-block'>
         <div className='ava-block'>

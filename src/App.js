@@ -1,29 +1,38 @@
 import React, { useContext } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch, Redirect, withRouter} from 'react-router-dom';
 import MainPage from './components/MainPage';
 import ContactMe from './components/ContactMe';
 import AboutMe from './components/AboutMe';
 import ThemeContextProvider, { ThemeContext } from './contexts/ThemeContext';
 import ProjectDetail from './components/ProjectDetail';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 function App() {
   return (
     <ThemeContextProvider >
-      <InnerThemePart />
+      <Router >
+        <InnerThemePart />
+      </Router >
     </ThemeContextProvider>
   );
 }
 
-const InnerThemePart = (props) => {
+let InnerThemePart = (props) => {
   const {isLight} = useContext(ThemeContext);
   const bgColor = isLight ? 'bg-light' : 'bg-secondary';
   const textColor = !isLight ? 'text-light' : 'text-dark';
   return (
-    <Router >
-        <div style={{'min-height': '100vh', 'padding-bottom': '40px'}} className={`${bgColor} ${textColor}`}>
-            <Navbar />
+ 
+      <div style={{'minHeight': '100vh', 'padding-bottom': '40px'}} className={`${bgColor} ${textColor}`}>
+        <Navbar />
+        <TransitionGroup>
+          <CSSTransition 
+            key={props.location.key}
+            classNames='page'
+            timeout={300}
+          >
             <Switch >    
               <Route exact path='/home' component={MainPage} />
               <Route path='/contactme' component={ContactMe} />
@@ -31,9 +40,13 @@ const InnerThemePart = (props) => {
               <Route path='/home/:id' component={ProjectDetail} />
               <Redirect to="/home" />
             </Switch >
-        </div>
-      </Router >
+          </CSSTransition>
+        </TransitionGroup>
+      </div>
+  
   )
 }
+
+InnerThemePart = withRouter(InnerThemePart);
 
 export default App;
