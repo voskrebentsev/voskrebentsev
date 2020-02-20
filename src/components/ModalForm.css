@@ -1,0 +1,7 @@
+.btn-ddd{
+  background-color:#ddd;
+}
+
+.btn-ddd:hover{
+  background-color:#aaa;
+}

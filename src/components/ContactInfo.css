@@ -1,0 +1,9 @@
+.list-group-item a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.list-group-item a:hover{
+  text-decoration: none;
+  color: inherit;
+}

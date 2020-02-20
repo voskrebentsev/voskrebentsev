@@ -1,0 +1,20 @@
+.project-container {
+  margin-bottom: 20px;
+}
+.card{
+  transition-duration: 0.5s;
+}
+
+.card:hover{
+  background-color: green;
+  box-shadow: 5px 5px 15px black;
+
+}
+
+.link{
+  text-decoration: none;
+}
+.link:hover{
+  text-decoration: none;
+}
+

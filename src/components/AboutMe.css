@@ -1,0 +1,21 @@
+.about-block{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.ava-block{
+  
+}
+
+#ava{
+  width: 90%;
+}
+
+.info-block{
+  vertical-align: center;
+}
+
+.info-block p{
+  padding-top: 10%;
+  width: 80%;
+}
