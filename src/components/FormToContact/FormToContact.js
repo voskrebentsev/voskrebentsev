@@ -1,6 +1,6 @@
 import React, {useContext, useReducer, useState} from 'react';
-import { ThemeContext } from '../contexts/ThemeContext';
-import { formReducer } from '../contexts/formReducer';
+import { ThemeContext } from '../../contexts/ThemeContext';
+import { formReducer } from '../../contexts/formReducer';
 import * as emailjs from 'emailjs-com';
 
 const FormToContact = () => {
@@ -62,13 +62,13 @@ const FormToContact = () => {
 
   const submitTheForm = (e) => {
     e.preventDefault();
-    emailjs.send('gmail', '', {
+    emailjs.send('gmail', 'template_Nn4nTg9r', {
       from_name: form.email,
       to_name: 'voskrebentsevmatt@gmail.com',
       subject: 'contact_me',
       message_html: form.comment,
       ...form
-    }, '')
+    }, 'user_XNjWuUvHuo836emCh0ZhC')
     .then(function(response) {
        console.log('SUCCESS!', response.status, response.text);
     }, function(error) {

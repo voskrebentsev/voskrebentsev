@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
-import { ThemeContext } from '../contexts/ThemeContext';
-import FormToContact from './FormToContact';
-import FormContextProvider from '../contexts/FormContext';
+import { ThemeContext } from '../../contexts/ThemeContext';
+import FormToContact from '../FormToContact/FormToContact';
+import FormContextProvider from '../../contexts/FormContext';
 import './ModalForm.css';
 
 const ModalForm = () => {

@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
 import './App.css';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 import {BrowserRouter as Router, Route, Switch, Redirect, withRouter} from 'react-router-dom';
-import MainPage from './components/MainPage';
-import ContactMe from './components/ContactMe';
-import AboutMe from './components/AboutMe';
+import MainPage from './components/MainPage/MainPage';
+import ContactMe from './components/ContactMe/ContactMe';
+import AboutMe from './components/AboutMe/AboutMe';
 import ThemeContextProvider, { ThemeContext } from './contexts/ThemeContext';
-import ProjectDetail from './components/ProjectDetail';
+import ProjectDetail from './components/ProjectDetail/ProjectDetail';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 function App() {

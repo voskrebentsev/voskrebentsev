@@ -1,5 +1,5 @@
 import React from 'react';
-import {mockData as data} from '../data/data';
+import {mockData as data} from '../../data/data';
 import {withRouter, Redirect} from 'react-router-dom'
 
 const ProjectDetail = (props) => {

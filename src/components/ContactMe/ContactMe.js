@@ -1,8 +1,8 @@
 import React from 'react'
-import ModalForm from './ModalForm'
-import ContactInfo from './ContactInfo';
-import FormContextProvider from '../contexts/FormContext';
+import ContactInfo from '../ContactInfo/ContactInfo';
+import FormContextProvider from '../../contexts/FormContext';
 import './ContactMe.css';
+import ModalForm from '../ModalForm/ModalForm';
 
 const ContactMe = () => {
   return (
