@@ -19,3 +19,14 @@
   padding-top: 10%;
   width: 80%;
 }
+
+.about-link{
+  font-weight: 600;
+  color: inherit;
+}
+
+
+.about-link:hover{
+  text-decoration: none;
+  color: inherit;
+}

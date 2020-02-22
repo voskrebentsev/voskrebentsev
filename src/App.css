@@ -58,3 +58,20 @@
     transform: rotate(360deg);
   }
 }
+
+h1,h2{
+	width: 320px;
+	margin: 0 auto;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font-family:'Big Shoulders Text', cursive;
+	font-weight:normal;
+}
+
+a,
+button,
+p{
+  text-transform: uppercase;
+	font-family:'Big Shoulders Text';
+	font-weight:normal;
+}

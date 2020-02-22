@@ -1,0 +1,9 @@
+.detail-link{
+  color: inherit;
+  font-weight: 500;
+}
+
+.detail-link:hover{
+  color: inherit;
+  text-decoration: none;
+}
