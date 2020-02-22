@@ -2,7 +2,7 @@ export const mockData = [
   {
     id: 1, 
     header: 'This Site', 
-    description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.',
+    description: 'This is my first attempt to work with React hooks. I used useEffect, useContext, useReducer and useState to organize store. Modal window with a form and Carousel are from Bootstrap.',
     imgs: [],
     stack: [
       'React',
@@ -16,7 +16,7 @@ export const mockData = [
   {
     id: 2, 
     header: 'Calculator', 
-    description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.',
+    description: 'The project was made using native Javascript',
     imgs: [
       './img/calc1.png',
     ],
@@ -28,7 +28,7 @@ export const mockData = [
   {
     id: 3, 
     header: 'Todo List', 
-    description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.',
+    description: 'It\'s a simple react application. I used a class based component to implelent the main store.',
     imgs: [],
     stack: [
       'React',
@@ -39,7 +39,7 @@ export const mockData = [
   {
     id: 4, 
     header: 'React Native app', 
-    description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.',
+    description: 'A simple post app that was created to using React Native',
     imgs: [
       './img/rn_app1.jpeg',
       './img/rn_app2.jpeg',
@@ -59,7 +59,7 @@ export const mockData = [
   {
     id: 5, 
     header: 'Test Case', 
-    description: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.',
+    description: 'It\'s a test case for one russian company.',
     imgs: [
       './img/test1.png',
       './img/test2.png',
